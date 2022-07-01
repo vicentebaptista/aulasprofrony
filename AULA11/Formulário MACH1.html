@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - formulários</title>
+</head>
+<body>
+    
+    <h2>Aliste-se</h2>
+<form action="https://bemach1.com.br/html-aula-forms/cadastroRecruta.php" method="post" target="_blank">
+    <label for="email"><b>Seu e-mail</b>
+        <br><input type="text" placeholder="Seu nome" id="email" name="email">
+    </label>
+   
+    <br>
+    <br>
+    <label for="senha"><b>Senha</b>
+        <br><input type="password" placeholder="Sua senha" id="password" name="senha">
+    </label>
+    
+    <br>
+    <br>
+    <label for="nomeCompleto"><b>Nome completo</b>
+        <br><input type="text" placeholder="Nome Completo" id="email" name="nomeCompleto">
+    </label>
+    <br>
+    <br>
+    <label for="cpf"><b>CPF (Apenas números)</b>
+        <br><input type="number" placeholder="CPF" maxlength="14" id="CPF" name="cpf">
+    </label>
+    <br>
+    <br>
+    <label for="rg"><b>RG (Apenas números)</b>
+        <br><input type="number" placeholder="RG" maxlength="9" id="RG" name="rg">
+    </label>
+    <br>
+    <br>
+    <label for="nascimento"><b>Data de nascimento</b>
+        <br><input type="date" id="date" name="nascimento">
+    </label>
+    <br>
+    <br>
+
+    
+    <fieldset>
+        <legend><b>Necessidades especiais</b></legend>
+        <label for="yes">
+            <input name="necessidadesEspeciais" id="yes" type="radio" value="sim"> Sim 
+        </label>
+            <br>
+            <label for="no">
+                <input name="necessidadesEspeciais" id="no" type="radio" value="no"> Não 
+            </label>
+    
+        </fieldset><br>
+
+    <label for="estado"><b>Estado de residência</b>
+        <br><select name="estado">
+            <option value="Acre"> Acre</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceará">Ceará</option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+            <option value="Maranhão">Maranhão</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Pará">Pará</option>
+            <option value="Paraíba">Paraíba</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            <option value="Rondônia">Rondônia</option>
+            <option value="Roraima">Roraima</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantins</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+        </select>
+    </label><br><br>
+    <fieldset>
+        <legend> <b> Espacialização desejada</b></legend>
+        <label for="especializacao1">
+            <input type="checkbox" id="mec" name="especializacao1"> Mecânica de aeronaves (Back-end)
+        </label>
+        <br>
+        <label for="especializacao2">
+            <input type="checkbox" id="mont" name="especializacao2"> Montagem de aeronaves (Front-end)
+        </label>
+        <br>
+        <label for="especializacao3">
+            <input type="checkbox" id="eng" name="especializacao3"> Engenheiro de aeronaves (Fullstack)
+        </label>
+        <br>
+        <label for="especializacao4">
+            <input type="checkbox" id="pilot" name="especializacao4"> Piloto (Tester)
+        </label>
+        <br>
+        <label for="especializacao5">
+            <input type="checkbox" id="op" name="especializacao5"> Operador de tráfego aéreo (Scrum Master)
+        </label>
+        </fieldset>
+        <br>
+        <label for="foto">Adicione sua foto: 
+            <input type="file" multiple id="upload" name="foto">
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+</form>
+
+
+</body>
+</html>
